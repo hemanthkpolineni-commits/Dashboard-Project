@@ -1,0 +1,5 @@
+{
+  "name": "CMS Productivity Dashboard",
+  "description": "A comprehensive CMS dashboard for managing tasks (PODs), error logs, user metrics, and documents. It features role-based access for Admins and Users, and a public view for task assignments.",
+  "requestFramePermissions": []
+}

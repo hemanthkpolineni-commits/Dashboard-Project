@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vendasta Websites CRM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'background': 'var(--color-background)',
+              'surface': 'var(--color-surface)',
+              'surface-highlight': 'var(--color-surface-highlight)',
+              'primary': 'var(--color-primary)',
+              'primary-hover': 'var(--color-primary-hover)',
+              'secondary': 'var(--color-secondary)',
+              'text-primary': 'var(--color-text-primary)',
+              'text-secondary': 'var(--color-text-secondary)',
+              'border': 'var(--color-border)',
+              'header-bg': 'var(--color-header-bg)',
+              'high-velocity': '#8b5cf6',
+              'agency': '#3b82f6',
+              'verticals': '#10b981',
+              'broadly-duda': '#ec4899',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --color-background: #f9fafb; /* gray-50 */
+        --color-surface: #ffffff;
+        --color-surface-highlight: #f3f4f6; /* gray-100 */
+        --color-primary: #38bdf8; /* lightBlue-400 */
+        --color-primary-hover: #7dd3fc; /* lightBlue-300 */
+        --color-secondary: #6366f1; /* indigo-500 */
+        --color-text-primary: #111827; /* gray-900 */
+        --color-text-secondary: #6b7280; /* gray-500 */
+        --color-border: #e5e7eb; /* gray-200 */
+        --color-header-bg: #ffffff;
+      }
+      .dark {
+        --color-background: #111827; /* gray-900 */
+        --color-surface: #1f2937;    /* gray-800 */
+        --color-surface-highlight: #374151; /* gray-700 */
+        --color-primary: #38bdf8;
+        --color-primary-hover: #7dd3fc;
+        --color-secondary: #818cf8;    /* indigo-400 */
+        --color-text-primary: #f9fafb; /* gray-50 */
+        --color-text-secondary: #9ca3af;/* gray-400 */
+        --color-border: #374151;      /* gray-700 */
+        --color-header-bg: #1f2937;    /* gray-800 */
+      }
+      .glassmorphism {
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .login-gradient {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.3.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.5",
+    "date-fns": "https://aistudiocdn.com/date-fns@^4.1.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0"
+  }
+}
+</script>
+</head>
+<body class="bg-background text-text-primary transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
